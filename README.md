@@ -55,13 +55,19 @@ c:\Users\maria\linkerexe\linkerd2-cli-stable-2.12.2-windows.exe check
 ## Install viz extension for dashboard 
 ```
 c:\Users\maria\linkerexe\linkerd2-cli-stable-2.12.2-windows.exe viz install | kubectl apply -f -
+```
+Launch and explore dashboard
+```
 c:\Users\maria\linkerexe\linkerd2-cli-stable-2.12.2-windows.exe viz dashboard &
 ```
 
-## Install emojitovo demo app
+## Install emojitovo demo app and forward it to port 8080
 ```
 curl --proto "=https" --ssl-no-revoke --tlsv1.2 -sSfL https://run.linkerd.io/emojivoto.yml | kubectl apply -f -
 kubectl -n emojivoto get po
+```
+Explore emojivoto on port 8080
+```
 kubectl -n emojivoto port-forward svc/web-svc 8080:80
 ```
 
