@@ -77,7 +77,8 @@ kubectl get -n emojivoto deploy -o yaml | c:\Users\maria\linkerexe\linkerd2-cli-
 kubectl -n emojivoto get po
 c:\Users\maria\linkerexe\linkerd2-cli-stable-2.12.2-windows.exe -n emojivoto check --proxy
 ```
-Explore dahsboard that was previously launched and see the api calls being done and which ones fail (hint: the doughnut vote fails)
+## Re-Explore dahsboard that was previously launched 
+See the api calls being done and which ones fail (hint: the doughnut vote fails)
 
 ## References
 https://linkerd.io/2.10/overview/
